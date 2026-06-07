@@ -1,11 +1,468 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="dark">
 <head>
-    <title>Kiran Kumar</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kiran Kumar — AI/ML Engineer · Quant</title>
+<meta name="description" content="Kiran Kumar P — B.Tech in AI & Data Science at IIT Madras. AI/ML engineer focused on applied research and quantitative finance. Open to quant and AI/ML internships." />
+<meta name="author" content="Kiran Kumar P" />
+<meta property="og:title" content="Kiran Kumar P — AI/ML Engineer · Quant" />
+<meta property="og:description" content="B.Tech in AI & Data Science, IIT Madras. Applied ML research & quantitative finance." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2308090c'/%3E%3Ctext x='50' y='68' font-family='monospace' font-size='52' font-weight='700' fill='%2322d3ee' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Kiran Kumar</h1>
-    <p>B.Tech AI & DS @ IIT Madras</p>
-    <p>Welcome to my website.</p>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <a class="brand" href="#top" aria-label="Kiran Kumar P — home">
+    <span class="mono">KK</span>
+    <span class="brand-name">Kiran Kumar P</span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#achievements">Highlights</a>
+    <a href="#blog">Writing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="icon-btn theme-toggle" data-theme-toggle aria-label="Toggle color theme" title="Toggle theme">
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.5M12 19v2.5M4.4 4.4l1.8 1.8M17.8 17.8l1.8 1.8M2.5 12H5M19 12h2.5M4.4 19.6l1.8-1.8M17.8 6.2l1.8-1.8"/></svg>
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5z"/></svg>
+    </button>
+    <button class="icon-btn menu-btn" data-menu aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-menu" aria-label="Mobile">
+  <a href="#about"><span class="mnum">01</span> About</a>
+  <a href="#research"><span class="mnum">02</span> Research</a>
+  <a href="#projects"><span class="mnum">03</span> Projects</a>
+  <a href="#leadership"><span class="mnum">04</span> Leadership</a>
+  <a href="#achievements"><span class="mnum">05</span> Highlights</a>
+  <a href="#blog"><span class="mnum">06</span> Writing</a>
+  <a href="#contact"><span class="mnum">07</span> Contact</a>
+</nav>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="grid"></div>
+    <div class="glow"></div>
+    <div class="glow two"></div>
+  </div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="status reveal"><span class="dot"></span> Open to Quant &amp; AI/ML internships — 2026</span>
+      <h1 class="reveal d1">Kiran <span class="grad">Kumar P</span></h1>
+      <p class="hero-role reveal d2">AI/ML engineer focused on <b>applied research</b> &amp; <b>quantitative finance</b>.</p>
+      <p class="hero-desc reveal d2">B.Tech in Artificial Intelligence &amp; Data Science at <strong>IIT Madras</strong>. I build ML systems end-to-end — from research and feature engineering to risk-adjusted portfolios and production dashboards.</p>
+      <div class="hero-cta reveal d3">
+        <a class="btn btn-primary" href="#projects">
+          View projects
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+          Get in touch
+        </a>
+      </div>
+      <div class="socials reveal d3">
+        <a href="https://github.com/poketwouser" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5A10.5 10.5 0 0 0 8.7 22c.5.1.7-.2.7-.5v-2c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.2-1.5-1.2-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2 1-2.7-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.5.1 2.8.7.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.7 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.5 10.5 0 0 0 12 1.5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/kirankumarp33/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4 0 4.8 2.6 4.8 6V21h-4v-5.3c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg>
+        </a>
+        <a href="https://codeforces.com/profile/kirankumarp405" target="_blank" rel="noopener" aria-label="Codeforces" title="Codeforces">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 7.5A1.5 1.5 0 0 1 6 9v9a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 2 18V9a1.5 1.5 0 0 1 1.5-1.5zM12 4.5A1.5 1.5 0 0 1 13.5 6v12a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9.5 18V6A1.5 1.5 0 0 1 11 4.5zM19.5 10.5A1.5 1.5 0 0 1 21 12v6a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 17 18v-6a1.5 1.5 0 0 1 1.5-1.5z"/></svg>
+        </a>
+        <a href="mailto:kirankumarp405@gmail.com" aria-label="Email" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 5.5L20 7"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-portrait reveal d2">
+      <div class="ring" aria-hidden="true"></div>
+      <div class="frame">
+        <img src="assets/kiran.jpg" alt="Kiran Kumar P" />
+      </div>
+      <div class="portrait-badge">
+        <div class="pb"><b>IIT Madras</b><span>AI &amp; DATA SCIENCE</span></div>
+        <div class="sep"></div>
+        <div class="pb"><b>B.Tech</b><span>2024 – 28</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span class="num">01</span> / About</p>
+    <div class="about-grid">
+      <div class="about-body reveal d1">
+        <h2 class="section-title">Engineering intelligence into decisions.</h2>
+        <p>I'm a B.Tech student in <strong>Artificial Intelligence &amp; Data Science at IIT Madras</strong>, drawn to problems where machine learning meets real-world stakes — markets, physiology, and large-scale data.</p>
+        <p>My work spans <strong>quantitative finance</strong> (forecasting, portfolio optimization, risk modeling), <strong>applied ML research</strong>, and <strong>data-intensive systems</strong>. I care about pipelines that are rigorous and reproducible — walk-forward validation over backtest theatre, shrinkage estimators over fragile covariances.</p>
+        <p>Outside the lab I help run placements for <strong>2000+ students</strong>, represent my department in academic policy, and train in offensive security through CTFs.</p>
+        <div class="focus-tags">
+          <span class="tag hot">Quantitative Finance</span>
+          <span class="tag hot">Machine Learning</span>
+          <span class="tag">Artificial Intelligence</span>
+          <span class="tag">Data Science</span>
+          <span class="tag">Cybersecurity</span>
+        </div>
+      </div>
+      <aside class="about-aside reveal d2">
+        <div class="facts">
+          <div class="fact-card">
+            <div class="k">Institution</div>
+            <div class="v">IIT Madras</div>
+          </div>
+          <div class="fact-card">
+            <div class="k">Program</div>
+            <div class="v">B.Tech AI &amp; DS <small>· 2024–2028</small></div>
+          </div>
+          <div class="fact-card">
+            <div class="k">Targeting</div>
+            <div class="v">Quant · AI/ML Roles</div>
+          </div>
+        </div>
+        <div class="stack-block">
+          <h4>// Core Toolkit</h4>
+          <div class="stack-row">
+            <span class="chip">Python</span>
+            <span class="chip">PyTorch</span>
+            <span class="chip">Scikit-learn</span>
+            <span class="chip">NumPy</span>
+            <span class="chip">Pandas</span>
+            <span class="chip">Plotly · Dash</span>
+            <span class="chip">XGBoost · LGBM</span>
+            <span class="chip">C</span>
+            <span class="chip">MATLAB</span>
+            <span class="chip">Git · Linux</span>
+            <span class="chip">Databricks</span>
+            <span class="chip">W&amp;B</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH / EXPERIENCE ============ -->
+<section id="research">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span class="num">02</span> / Research &amp; Experience</p>
+    <h2 class="section-title reveal d1">Applied ML research.</h2>
+    <p class="section-lead reveal d1" style="margin-bottom:38px;">Ongoing research under faculty at IIT Madras, turning noisy physiological signals into reliable estimates.</p>
+    <article class="research-card reveal d2">
+      <div class="rc-head">
+        <div>
+          <h3>VO₂max Estimation &amp; Measurement for Indian Athletes</h3>
+          <p class="rc-sub">Research Assistant · Prof. Raghunathan Rengaswamy &amp; Prof. Preeti Aghalyam</p>
+        </div>
+        <div class="rc-meta">RESEARCH<br/>IIT MADRAS</div>
+      </div>
+      <ul class="rc-list">
+        <li>Reviewed VO₂max protocols and models, identifying systematic errors, population bias, and limitations in proxy equations for Indian athletes.</li>
+        <li>Analyzed CPET systems and testing pipelines — studying data generation, sensor noise, and sources of measurement error.</li>
+        <li>Formulated a supervised ML approach using CPET as ground truth and wearable / gas-analyzer signals as noisy inputs.</li>
+        <li>Designed an ML pipeline with physiological features, regression &amp; error-correction models, and validation to minimize estimation error.</li>
+      </ul>
+      <div class="rc-tags">
+        <span class="chip">Supervised Learning</span>
+        <span class="chip">Signal Processing</span>
+        <span class="chip">Regression</span>
+        <span class="chip">Physiological Modeling</span>
+        <span class="chip">CPET</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span class="num">03</span> / Featured Projects</p>
+    <h2 class="section-title reveal d1">Selected work.</h2>
+    <p class="section-lead reveal d1" style="margin-bottom:40px;">From systematic trading strategies to large-scale analytics platforms.</p>
+
+    <div class="proj-grid">
+
+      <!-- Feature: Quant -->
+      <article class="proj-card feature reveal d1">
+        <div class="pc-content">
+          <div class="pc-top">
+            <span class="pc-kicker">Quantitative Finance</span>
+            <span class="pc-year">2026</span>
+          </div>
+          <h3>Quantitative Asset Allocation</h3>
+          <p class="pc-desc">An end-to-end ML financial forecasting pipeline with walk-forward validation for stock-return prediction, feeding a risk-adjusted portfolio optimizer. Guided by Prof. Nandan Sudarsanam (DSAI for Finance).</p>
+          <div class="pc-metrics">
+            <div class="metric">
+              <span class="mv"><span class="accent" data-count="74.5" data-decimals="1" data-suffix="%">74.5%</span></span>
+              <span class="ml">CAGR</span>
+            </div>
+            <div class="metric">
+              <span class="mv"><span class="accent" data-count="6.96" data-decimals="2">6.96</span></span>
+              <span class="ml">Sharpe Ratio</span>
+            </div>
+            <div class="metric">
+              <span class="mv"><span data-count="40" data-suffix="+">40+</span></span>
+              <span class="ml">Engineered Features</span>
+            </div>
+          </div>
+          <p class="pc-desc" style="margin-bottom:6px;">Ledoit–Wolf shrinkage with bootstrap analysis and HRP for robust, low-turnover optimization · portfolio replication via Lasso &amp; autoencoder latent factors to minimize tracking error vs. the S&amp;P 500.</p>
+          <div class="pc-tags">
+            <span class="chip">XGBoost</span><span class="chip">LightGBM</span><span class="chip">LSTM</span>
+            <span class="chip">Walk-forward CV</span><span class="chip">HRP</span><span class="chip">Ledoit–Wolf</span><span class="chip">Autoencoders</span>
+          </div>
+        </div>
+        <div class="feature-visual">
+          <div class="spark">
+            <span class="lbl">Equity Curve</span>
+            <span class="lbl r">Sharpe 6.96</span>
+            <svg viewBox="0 0 400 275" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="var(--accent)" stop-opacity="0.32"/>
+                  <stop offset="1" stop-color="var(--accent)" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <line x1="0" y1="206" x2="400" y2="206" stroke="var(--border)" stroke-width="1"/>
+              <line x1="0" y1="137" x2="400" y2="137" stroke="var(--border)" stroke-width="1" stroke-dasharray="3 5"/>
+              <line x1="0" y1="68" x2="400" y2="68" stroke="var(--border)" stroke-width="1" stroke-dasharray="3 5"/>
+              <path d="M0,232 C40,224 55,210 80,206 C110,201 120,178 150,170 C180,162 188,178 210,162 C236,143 248,120 280,104 C306,91 318,98 340,72 C360,50 378,40 400,26 L400,275 L0,275 Z" fill="url(#fill)"/>
+              <path d="M0,232 C40,224 55,210 80,206 C110,201 120,178 150,170 C180,162 188,178 210,162 C236,143 248,120 280,104 C306,91 318,98 340,72 C360,50 378,40 400,26" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-linecap="round"/>
+              <circle cx="400" cy="26" r="4" fill="var(--accent)"/>
+            </svg>
+          </div>
+        </div>
+      </article>
+
+      <!-- IPL Dashboard -->
+      <article class="proj-card reveal d2">
+        <div class="pc-top">
+          <span class="pc-kicker">Data Engineering · Viz</span>
+          <span class="pc-year">2025</span>
+        </div>
+        <h3>IPL Intelligence Dashboard</h3>
+        <p class="pc-desc">An IPL analytics platform processing 1,100+ matches and 260K+ ball-by-ball records — cleaning, imputation, schema standardization and relational joins, with Parquet-optimized storage and querying.</p>
+        <div class="pc-metrics">
+          <div class="metric">
+            <span class="mv"><span class="accent" data-count="260" data-suffix="K+">260K+</span></span>
+            <span class="ml">Ball-by-ball records</span>
+          </div>
+          <div class="metric">
+            <span class="mv"><span data-count="13" data-suffix="+">13+</span></span>
+            <span class="ml">Dashboard modules</span>
+          </div>
+        </div>
+        <p class="pc-desc">13+ interactive modules for player, venue and match analytics — deployed with Docker &amp; Vercel.</p>
+        <div class="pc-tags">
+          <span class="chip">Dash</span><span class="chip">Plotly</span><span class="chip">Pandas</span><span class="chip">Flask</span><span class="chip">Parquet</span><span class="chip">Docker</span>
+        </div>
+        <div class="pc-links">
+          <a class="pc-link" href="https://github.com/poketwouser" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5A10.5 10.5 0 0 0 8.7 22c.5.1.7-.2.7-.5v-2c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.2-1.5-1.2-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2 1-2.7-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.5.1 2.8.7.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.7 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.5 10.5 0 0 0 12 1.5z"/></svg>
+            View code
+          </a>
+        </div>
+      </article>
+
+      <!-- Vamana -->
+      <article class="proj-card reveal d3">
+        <div class="pc-top">
+          <span class="pc-kicker">Algorithms · ANN Search</span>
+          <span class="pc-year">2025</span>
+        </div>
+        <h3>Vamana Algorithm, Rethought</h3>
+        <p class="pc-desc">A study and reimplementation of the Vamana graph-construction algorithm behind disk-based approximate nearest-neighbor search — exploring graph quality, recall, and latency trade-offs at scale.</p>
+        <div class="pc-tags">
+          <span class="chip">Graph ANN</span><span class="chip">Vector Search</span><span class="chip">C / Python</span><span class="chip">Algorithms</span>
+        </div>
+        <div class="pc-links">
+          <a class="pc-link" href="https://github.com/poketwouser" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5A10.5 10.5 0 0 0 8.7 22c.5.1.7-.2.7-.5v-2c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.2-1.5-1.2-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2 1-2.7-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.5.1 2.8.7.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.7 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.5 10.5 0 0 0 12 1.5z"/></svg>
+            View code
+          </a>
+          <span class="pc-soon">Write-up soon</span>
+        </div>
+      </article>
+
+      <!-- 3D Reconstruction -->
+      <article class="proj-card reveal d2">
+        <div class="pc-top">
+          <span class="pc-kicker">Computer Vision</span>
+          <span class="pc-year">2025</span>
+        </div>
+        <h3>3D Image Reconstruction</h3>
+        <p class="pc-desc">Reconstructing 3D structure from 2D imagery — calibrating geometry, estimating depth, and recovering scene structure using modern computer-vision techniques.</p>
+        <div class="pc-tags">
+          <span class="chip">Computer Vision</span><span class="chip">Geometry</span><span class="chip">PyTorch</span><span class="chip">Depth Estimation</span>
+        </div>
+        <div class="pc-links">
+          <a class="pc-link" href="https://github.com/poketwouser" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5A10.5 10.5 0 0 0 8.7 22c.5.1.7-.2.7-.5v-2c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.2-1.5-1.2-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2 1-2.7-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.5.1 2.8.7.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.7 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.5 10.5 0 0 0 12 1.5z"/></svg>
+            View code
+          </a>
+          <span class="pc-soon">Write-up soon</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEADERSHIP ============ -->
+<section id="leadership">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span class="num">04</span> / Leadership</p>
+    <h2 class="section-title reveal d1">Positions of responsibility.</h2>
+    <p class="section-lead reveal d1" style="margin-bottom:40px;">Elected and appointed roles representing students and running institute-scale operations.</p>
+
+    <div class="timeline">
+      <article class="lead-card reveal d1">
+        <div class="lc-when">Mar 2026<span class="now">— Current</span></div>
+        <div class="lc-body">
+          <h3>Department Legislator (Academic)</h3>
+          <p class="lc-org">Wadhwani School of Artificial Intelligence · IIT Madras</p>
+          <p>Elected with an overwhelming majority to represent DSAI students in academic policy discussions. Resolved critical academic issues — including scheduling conflicts and slot clashes — through coordination with faculty and administration.</p>
+          <span class="lc-pill">Elected <b>by majority</b></span>
+        </div>
+      </article>
+
+      <article class="lead-card reveal d2">
+        <div class="lc-when">May 2025<span class="now">— Apr 2026</span></div>
+        <div class="lc-body">
+          <h3>Deputy Placement Coordinator</h3>
+          <p class="lc-org">Placement &amp; Internship Cell · IIT Madras</p>
+          <p>Founding member for the DSAI department at the Placement Cell. Led student–recruiter coordination, managed end-to-end recruitment — company outreach, pre-placement talks, scheduling and interview logistics.</p>
+          <span class="lc-pill">Coordinated drives for <b>2000+ students</b></span>
+        </div>
+      </article>
+
+      <article class="lead-card reveal d3">
+        <div class="lc-when">Oct 2024<span class="now">— Jun 2025</span></div>
+        <div class="lc-body">
+          <h3>Deputy Coordinator — Cybersecurity Club</h3>
+          <p class="lc-org">IIT Madras</p>
+          <p>Completed structured training in cryptography, binary exploitation, web exploitation and reverse engineering. Applied concepts through hands-on CTF challenges and labs in penetration testing, secure coding and vulnerability assessment.</p>
+          <span class="lc-pill">CTF · <b>Offensive security</b></span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACHIEVEMENTS ============ -->
+<section id="achievements">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span class="num">05</span> / Achievements</p>
+    <h2 class="section-title reveal d1">Beyond the classroom.</h2>
+    <p class="section-lead reveal d1" style="margin-bottom:40px;">Competitive programming, national service, and sport.</p>
+
+    <div class="ach-grid">
+      <div class="ach-card reveal d1">
+        <div class="ach-v"><span class="accent" data-count="1046">1046</span></div>
+        <div class="ach-k">Codeforces Rating</div>
+        <div class="ach-sub">Active competitive programmer</div>
+      </div>
+      <div class="ach-card reveal d2">
+        <div class="ach-v">Level <span class="accent">A</span></div>
+        <div class="ach-k">NCC Certification</div>
+        <div class="ach-sub">10-day camp &amp; qualifying test</div>
+      </div>
+      <div class="ach-card reveal d3">
+        <div class="ach-v">NSO</div>
+        <div class="ach-k">Cricket — Top 30 selected</div>
+        <div class="ach-sub">Captain, DSAI Dept. team</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG / WRITING ============ -->
+<section id="blog">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span class="num">06</span> / Writing</p>
+    <h2 class="section-title reveal d1">Notes &amp; writing.</h2>
+    <p class="section-lead reveal d1" style="margin-bottom:40px;">Long-form thinking on AI, quant, and the things I build and help run.</p>
+    <div class="blog-grid">
+      <article class="blog-card featured reveal d1">
+        <div class="bc-top"><span class="bc-tag">Upcoming</span><span class="bc-date">2026</span></div>
+        <h3>The RRs 2026 Campaign</h3>
+        <p>Notes and takeaways from the RRs 2026 campaign — coordination, outreach, and lessons from working at scale. First post landing soon.</p>
+        <span class="bc-soon">Coming soon</span>
+      </article>
+      <article class="blog-card muted reveal d2">
+        <div class="bc-mark">···</div>
+        <h3 style="font-size:21px;">More on the way</h3>
+        <p>Essays on machine learning, quantitative finance, and security — in progress.</p>
+        <a class="pc-link" href="https://www.linkedin.com/in/kirankumarp33/" target="_blank" rel="noopener" style="margin-top:18px;">
+          Follow on LinkedIn for updates
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="contact">
+  <div class="hero-bg" aria-hidden="true"><div class="glow two" style="top:10%;left:50%;transform:translateX(-50%);opacity:0.3;"></div></div>
+  <div class="wrap">
+    <p class="eyebrow reveal" style="justify-content:center;"><span class="num">07</span> / Contact</p>
+    <h2 class="reveal d1">Let's build something <span class="grad">precise.</span></h2>
+    <p class="reveal d1">Open to internships and collaborations in quantitative finance, AI/ML and applied research. The fastest way to reach me is email.</p>
+    <a class="contact-mail reveal d2" href="mailto:kirankumarp405@gmail.com">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="22" height="22"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 5.5L20 7"/></svg>
+      kirankumarp405@gmail.com
+    </a>
+    <div class="contact-cta reveal d2">
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/kirankumarp33/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4 0 4.8 2.6 4.8 6V21h-4v-5.3c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg>
+        Connect on LinkedIn
+      </a>
+      <a class="btn btn-ghost" href="https://github.com/poketwouser" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 1.5A10.5 10.5 0 0 0 8.7 22c.5.1.7-.2.7-.5v-2c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.2-1.5-1.2-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2 1-2.7-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.5.1 2.8.7.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.7 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.5 10.5 0 0 0 12 1.5z"/></svg>
+        GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <div class="f-name">Kiran Kumar P</div>
+      <div class="f-meta">AI &amp; Data Science · IIT Madras · © <span data-year>2026</span></div>
+    </div>
+    <div class="f-soc">
+      <a href="https://github.com/poketwouser" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5A10.5 10.5 0 0 0 8.7 22c.5.1.7-.2.7-.5v-2c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.2-1.5-1.2-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2 1-2.7-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.5.1 2.8.7.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.7 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.5 10.5 0 0 0 12 1.5z"/></svg></a>
+      <a href="https://www.linkedin.com/in/kirankumarp33/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4 0 4.8 2.6 4.8 6V21h-4v-5.3c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg></a>
+      <a href="https://codeforces.com/profile/kirankumarp405" target="_blank" rel="noopener" aria-label="Codeforces"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 7.5A1.5 1.5 0 0 1 6 9v9a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 2 18V9a1.5 1.5 0 0 1 1.5-1.5zM12 4.5A1.5 1.5 0 0 1 13.5 6v12a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9.5 18V6A1.5 1.5 0 0 1 11 4.5zM19.5 10.5A1.5 1.5 0 0 1 21 12v6a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 17 18v-6a1.5 1.5 0 0 1 1.5-1.5z"/></svg></a>
+      <a href="mailto:kirankumarp405@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 5.5L20 7"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
