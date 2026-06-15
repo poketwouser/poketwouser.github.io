@@ -675,10 +675,8 @@ a.blog-card:hover .bc-soon { color: var(--accent); gap: 13px; }
   .areas { grid-template-columns: 1fr; }
   .ach-grid { grid-template-columns: 1fr; }
   .blog-grid { grid-template-columns: 1fr; }
-  /* Compact the nav: icon-only "Get in touch" beside the hamburger */
+  /* Compact the nav for small screens */
   .nav { gap: 12px; }
-  .nav-actions .btn-ghost .btn-label { display: none; }
-  .nav-actions .btn-ghost { padding: 12px; }
   .brand-name span { display: none; }
   /* Stack journey header hint below the title */
   .journey-head { margin-bottom: 40px; }
