@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<section class="hero">
+  <p class="post-eyebrow">Notes &amp; writing</p>
+  <h1 class="hero-title">Long-form thinking on <span class="grad">cricket, AI &amp; quant.</span></h1>
+  <p class="hero-lead">{{ site.description }}</p>
+</section>
+
+<section class="post-list">
+  {% for post in site.posts %}
+  <a class="post-card" href="{{ post.url | relative_url }}">
+    <div class="pc-top">
+      <span class="pc-tag">{% if post.tags %}{{ post.tags | first }}{% else %}Post{% endif %}</span>
+      <time class="pc-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b %Y" }}</time>
+    </div>
+    <h2 class="pc-title">{{ post.title }}</h2>
+    {% if post.subtitle %}<p class="pc-sub">{{ post.subtitle }}</p>{% else %}<p class="pc-sub">{{ post.excerpt | strip_html | truncate: 160 }}</p>{% endif %}
+    <span class="pc-read">Read the post →</span>
+  </a>
+  {% endfor %}
+</section>

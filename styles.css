@@ -430,6 +430,14 @@ html.anim .line-reveal.in .ln:nth-child(5) { transition-delay: 0.4s; }
 .more-card p b { color: var(--accent); font-weight: 600; }
 @media (max-width: 760px) { .more-grid { grid-template-columns: 1fr; } }
 
+/* Inner pages: first section must clear the fixed nav */
+main.inner > section:first-child { padding-top: calc(74px + clamp(18px, 4vw, 46px)); }
+
+/* Home intro — navigation cards reuse .more-card as links */
+a.more-card { color: inherit; display: flex; flex-direction: column; }
+a.more-card .proj-link { margin-top: auto; }
+a.more-card:hover .proj-link { color: var(--accent); gap: 10px; }
+
 /* GitHub banner */
 .gh-more {
   display: flex; align-items: center; gap: clamp(20px, 3vw, 36px); margin-top: 26px;

@@ -1,0 +1,243 @@
+---
+layout: default
+title: Work
+permalink: /work/
+main_class: inner
+description: "Selected work by Kiran Kumar P — VO2max research, quant index replication, billion-scale vector search, 3D vision, agentic AI and more."
+---
+
+<section id="research">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span class="num">04</span> / Research</p>
+    <article class="proj reveal d1 research-card">
+      <div class="proj-body">
+        <span class="proj-no">ONGOING · IIT MADRAS</span>
+        <span class="proj-kicker">Applied ML · Physiological Modeling</span>
+        <div class="research-affil reveal d1">
+          <img id="walmart-cte-logo" class="affil-logo" src="assets/walmart-logo.png" alt="Walmart Center for Tech Excellence" />
+          <div class="affil-meta"><b>Walmart Center for Tech Excellence</b><span>Sponsored Research · IIT Madras</span></div>
+        </div>
+        <h3 style="max-width:20ch;">VO₂max Estimation for Athletes</h3>
+        <p class="proj-desc" style="max-width:54ch;">Research at the <strong>Walmart Center for Tech Excellence</strong> under Prof. Preeti Aghalyam &amp; Prof. Raghunathan Rengaswamy. Aggregated 200+ participant sessions and 30+ multimodal features into a hybrid GRU/TCN + GBDT architecture — reaching MAE 3.6 and R² 0.79 with leakage-free subject-wise CV, SHAP bias diagnostics, and on-device smartwatch inference (1 MB, 7 ms).</p>
+        <div class="proj-metrics" style="margin-bottom:24px;">
+          <div class="metric"><span class="mv"><span class="accent" data-count="0.79" data-decimals="2">0.79</span></span><span class="ml">R² on benchmarks</span></div>
+          <div class="metric"><span class="mv"><span data-count="7" data-suffix="ms">7ms</span></span><span class="ml">On-device latency</span></div>
+          <div class="metric"><span class="mv"><span data-count="200" data-suffix="+">200+</span></span><span class="ml">Participant sessions</span></div>
+        </div>
+        <div class="proj-tags" style="margin-bottom:0;"><span class="chip">GRU / TCN</span><span class="chip">GBDT</span><span class="chip">SHAP</span><span class="chip">Quantization</span><span class="chip">On-device ML</span></div>
+      </div>
+      <div class="proj-visual research-visual" data-viz="vo2">
+        <span class="v-label">VO₂ Uptake</span><span class="v-label r">ml/kg/min</span>
+        <canvas></canvas>
+        <div class="advisors">
+          <div class="advisor">
+            <img id="prof-raghu" class="advisor-photo" src="assets/prof-raghu.jpg" alt="Prof. Raghunathan Rengaswamy" />
+            <div class="advisor-meta"><b>Prof. Raghunathan Rengaswamy</b><span>Co-Advisor · ChE / Sys. Eng.</span></div>
+          </div>
+          <div class="advisor">
+            <img id="prof-preeti" class="advisor-photo" src="assets/prof-preeti.jpg" alt="Prof. Preeti Aghalyam" />
+            <div class="advisor-meta"><b>Prof. Preeti Aghalyam</b><span>Co-Advisor · Chemical Eng.</span></div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span class="num">05</span> / Featured Projects</p>
+    <h2 class="section-title reveal d1">Selected <span class="grad">work.</span></h2>
+    <p class="section-lead reveal d1" style="margin-bottom:56px;">Each treated like a product launch — spanning quant finance, billion-scale vector search, large-scale analytics, 3D vision, language modeling, medical imaging and speech.</p>
+
+    <div class="proj-stack">
+
+      <!-- P1 Quant -->
+      <article class="proj reveal d1">
+        <div class="proj-body">
+          <span class="proj-no">PROJECT 01</span>
+          <span class="proj-kicker">Quantitative Finance · Index Replication</span>
+          <h3>Portfolio Construction &amp; Index Replication</h3>
+          <p class="proj-desc">A sparse S&amp;P 500 replication strategy over a 559-stock, 5-year universe — tracking the index with just 43 constituents, beating a PyTorch autoencoder baseline ~16× on out-of-sample error. Paired with a multimodal forecaster fusing 44 features (incl. FinBERT over 5,426 headlines), Ledoit–Wolf shrinkage &amp; HRP. Guided by Prof. Nandan Sudarsanam.</p>
+          <div class="proj-metrics">
+            <div class="metric"><span class="mv"><span class="accent" data-count="43">43</span></span><span class="ml">Constituents of 559</span></div>
+            <div class="metric"><span class="mv"><span class="accent" data-count="16" data-suffix="×">16×</span></span><span class="ml">Better tracking error</span></div>
+            <div class="metric"><span class="mv"><span data-count="44" data-suffix="+">44+</span></span><span class="ml">Engineered Features</span></div>
+          </div>
+          <div class="proj-tags"><span class="chip">Lasso</span><span class="chip">XGBoost</span><span class="chip">LightGBM</span><span class="chip">LSTM</span><span class="chip">FinBERT</span><span class="chip">Ledoit–Wolf</span><span class="chip">HRP</span></div>
+          <div class="proj-links">
+            <a class="proj-link magnetic" href="https://github.com/poketwouser/Portfolio-Construction-and-Index-Replication" target="_blank" rel="noopener" data-cursor><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5A10.5 10.5 0 0 0 8.7 22c.5.1.7-.2.7-.5v-2c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.2-1.5-1.2-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2 1-2.7-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.5.1 2.8.7.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.7 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.5 10.5 0 0 0 12 1.5z"/></svg> View repository</a>
+          </div>
+        </div>
+        <div class="proj-visual" data-viz="equity"><span class="v-label">Equity Curve</span><span class="v-label r">0.0045 TE</span><canvas></canvas></div>
+      </article>
+
+      <!-- P2 IPL -->
+      <article class="proj reveal d1">
+        <div class="proj-body">
+          <span class="proj-no">PROJECT 02</span>
+          <span class="proj-kicker">Data Engineering · Visualization</span>
+          <h3>IPL Intelligence Dashboard</h3>
+          <p class="proj-desc">A pipeline turning 1,235 raw match files into schema-validated Parquet across 293K+ delivery events — a 95% storage cut — feeding a win-probability engine (Brier ~0.12) and a modular 8-route Dash app with a 21-component UI library.</p>
+          <div class="proj-metrics">
+            <div class="metric"><span class="mv"><span class="accent" data-count="293" data-suffix="K+">293K+</span></span><span class="ml">Delivery events</span></div>
+            <div class="metric"><span class="mv"><span data-count="95" data-suffix="%">95%</span></span><span class="ml">Storage reduction</span></div>
+            <div class="metric"><span class="mv"><span data-count="8">8</span></span><span class="ml">Dash route modules</span></div>
+          </div>
+          <div class="proj-tags"><span class="chip">Dash</span><span class="chip">Plotly</span><span class="chip">Pandas</span><span class="chip">Parquet</span><span class="chip">Flask</span><span class="chip">Docker</span></div>
+          <div class="proj-links">
+            <a class="proj-link magnetic" href="https://github.com/poketwouser/IPL-Intelligence" target="_blank" rel="noopener" data-cursor><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5A10.5 10.5 0 0 0 8.7 22c.5.1.7-.2.7-.5v-2c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.2-1.5-1.2-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2 1-2.7-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.5.1 2.8.7.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.7 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.5 10.5 0 0 0 12 1.5z"/></svg> View repository</a>
+          </div>
+        </div>
+        <div class="proj-visual" data-viz="bars"><span class="v-label">Live Analytics</span><span class="v-label r">293K events</span><canvas></canvas></div>
+      </article>
+
+      <!-- P3 Vamana -->
+      <article class="proj reveal d1">
+        <div class="proj-body">
+          <span class="proj-no">PROJECT 03</span>
+          <span class="proj-kicker">Algorithms · Vector Search</span>
+          <h3>Adaptive Vamana Search System</h3>
+          <p class="proj-desc">A scalable vector search engine for 1M+ 128-d embeddings, fusing cluster-aware indexing with graph-based ANN to evaluate ~860× fewer candidates. Adaptive Vamana adds K-Means medoid routing, multi-entry traversal and edge-usage-guided refinement — pruning 26% of edges. Advised by Prof. Ravishankar Krishnaswamy.</p>
+          <div class="proj-metrics">
+            <div class="metric"><span class="mv"><span class="accent" data-count="98.4" data-decimals="1" data-suffix="%">98.4%</span></span><span class="ml">Recall @ 10</span></div>
+            <div class="metric"><span class="mv"><span data-count="730" data-suffix="×">730×</span></span><span class="ml">Faster than exhaustive</span></div>
+            <div class="metric"><span class="mv"><span data-count="1" data-suffix="M+">1M+</span></span><span class="ml">128-d vectors</span></div>
+          </div>
+          <div class="proj-tags"><span class="chip">Graph ANN</span><span class="chip">Vamana</span><span class="chip">K-Means</span><span class="chip">FAISS</span><span class="chip">C / Python</span></div>
+          <div class="proj-links">
+            <a class="proj-link magnetic" href="https://github.com/poketwouser/Adaptive-Vamana-Algorithm" target="_blank" rel="noopener" data-cursor><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5A10.5 10.5 0 0 0 8.7 22c.5.1.7-.2.7-.5v-2c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.2-1.5-1.2-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2 1-2.7-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.5.1 2.8.7.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.7 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.5 10.5 0 0 0 12 1.5z"/></svg> View repository</a>
+          </div>
+        </div>
+        <div class="proj-visual" data-viz="graph"><span class="v-label">Graph Network</span><span class="v-label r">ANN traversal</span><canvas></canvas></div>
+      </article>
+
+      <!-- P4 CV -->
+      <article class="proj reveal d1">
+        <div class="proj-body">
+          <span class="proj-no">PROJECT 04</span>
+          <span class="proj-kicker">Computer Vision · 3D Reconstruction</span>
+          <h3>3D Gaussian Splatting Super-Resolution</h3>
+          <p class="proj-desc">Voxel-subsampling a dense 4M-point MASt3R initialization to a uniform 75K-point representation, then running per-Gaussian SwinIR-L super-resolution at render time for multi-view-consistent detail. Pose-free reconstruction via MASt3R joint pose + geometry, scaled on A100 HPC. Advised by Prof. Kaushik Mitra.</p>
+          <div class="proj-metrics">
+            <div class="metric"><span class="mv"><span class="accent" data-count="0.807" data-decimals="3">0.807</span></span><span class="ml">PSNR (from 0.750)</span></div>
+            <div class="metric"><span class="mv"><span data-count="75" data-suffix="K">75K</span></span><span class="ml">Points (from 4M)</span></div>
+          </div>
+          <div class="proj-tags"><span class="chip">3DGS</span><span class="chip">MASt3R</span><span class="chip">SwinIR</span><span class="chip">PyTorch</span><span class="chip">Pose-free</span></div>
+          <div class="proj-links">
+            <a class="proj-link magnetic" href="https://github.com/poketwouser/Modern-Computer-Vision" target="_blank" rel="noopener" data-cursor><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5A10.5 10.5 0 0 0 8.7 22c.5.1.7-.2.7-.5v-2c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.2-1.5-1.2-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2 1-2.7-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.5.1 2.8.7.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.7 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.5 10.5 0 0 0 12 1.5z"/></svg> View repository</a>
+          </div>
+        </div>
+        <div class="proj-visual" data-viz="vision"><span class="v-label">Scene Reconstruction</span><span class="v-label r">3DGS render</span><canvas></canvas></div>
+      </article>
+
+      <!-- P5 Compliance -->
+      <article class="proj reveal d1">
+        <div class="proj-body">
+          <span class="proj-no">PROJECT 05</span>
+          <span class="proj-kicker">Agentic AI · Full-Stack</span>
+          <h3>Compliance Intelligence Platform</h3>
+          <p class="proj-desc">A 4-agent AI orchestration pipeline (FastAPI · MongoDB · React) automating compliance analysis across 5 regulatory frameworks — context-aware Gemini agents synthesize live data into control-gap findings and risk reports. Built in 24 hours; <strong>VISA Hackathon finalist from 3000+ teams.</strong></p>
+          <div class="proj-metrics">
+            <div class="metric"><span class="mv"><span class="accent" data-count="4">4</span></span><span class="ml">Orchestrated agents</span></div>
+            <div class="metric"><span class="mv"><span class="accent" data-count="5">5</span></span><span class="ml">Regulatory frameworks</span></div>
+            <div class="metric"><span class="mv"><span data-count="24" data-suffix="h">24h</span></span><span class="ml">Build · finalist</span></div>
+          </div>
+          <div class="proj-tags"><span class="chip">FastAPI</span><span class="chip">MongoDB</span><span class="chip">React</span><span class="chip">Gemini</span><span class="chip">Multi-agent</span></div>
+          <div class="proj-links">
+            <a class="proj-link magnetic" href="https://github.com/Kevii137/Visa-Compliance-Platform" target="_blank" rel="noopener" data-cursor><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5A10.5 10.5 0 0 0 8.7 22c.5.1.7-.2.7-.5v-2c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.2-1.5-1.2-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2 1-2.7-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.5.1 2.8.7.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.7 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.5 10.5 0 0 0 12 1.5z"/></svg> View repository</a>
+          </div>
+        </div>
+        <div class="proj-visual" data-viz="agents"><span class="v-label">Agent Orchestration</span><span class="v-label r">4 agents · live</span><canvas></canvas></div>
+      </article>
+
+      <!-- P6 Compiler -->
+      <article class="proj reveal d1">
+        <div class="proj-body">
+          <span class="proj-no">PROJECT 06</span>
+          <span class="proj-kicker">Systems · Compilers</span>
+          <h3>End-to-End Jack Compiler</h3>
+          <p class="proj-desc">A full Jack-language compiler in Python — a lexical tokenizer, recursive-descent parser, scope-aware symbol table and a VM code writer emitting stack-based bytecode, with dynamic allocation, pointer handling and expression-tree evaluation across the whole front-to-back pipeline.</p>
+          <div class="proj-metrics">
+            <div class="metric"><span class="mv"><span class="accent">Lexer</span></span><span class="ml">→ Parser → Codegen</span></div>
+            <div class="metric"><span class="mv"><span class="accent">VM</span></span><span class="ml">Stack-based bytecode</span></div>
+          </div>
+          <div class="proj-tags"><span class="chip">Python</span><span class="chip">Tokenizer</span><span class="chip">Recursive-descent</span><span class="chip">Symbol Table</span><span class="chip">VM Codegen</span></div>
+          <div class="proj-links">
+            <a class="proj-link magnetic" href="https://github.com/poketwouser/End-to-End-Compiler" target="_blank" rel="noopener" data-cursor><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5A10.5 10.5 0 0 0 8.7 22c.5.1.7-.2.7-.5v-2c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.2-1.5-1.2-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2 1-2.7-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.5.1 2.8.7.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.7 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.5 10.5 0 0 0 12 1.5z"/></svg> View repository</a>
+          </div>
+        </div>
+        <div class="proj-visual" data-viz="compiler"><span class="v-label">Source → Bytecode</span><span class="v-label r">tokenizing…</span><canvas></canvas></div>
+      </article>
+
+      <!-- P7 Speech -->
+      <article class="proj reveal d1">
+        <div class="proj-body">
+          <span class="proj-no">PROJECT 07</span>
+          <span class="proj-kicker">Speech · Acoustic Modeling</span>
+          <h3>Speech Recognition from First Principles</h3>
+          <p class="proj-desc">A complete spoken-digit recognition pipeline built from scratch with Gaussian Mixture Models and Hidden Markov Models — acoustic modeling, temporal sequence decoding and speaker-level performance analysis over a full signal-processing chain.</p>
+          <div class="proj-metrics">
+            <div class="metric"><span class="mv"><span class="accent">GMM</span></span><span class="ml">Acoustic models</span></div>
+            <div class="metric"><span class="mv"><span class="accent">HMM</span></span><span class="ml">Sequence decoding</span></div>
+          </div>
+          <div class="proj-tags"><span class="chip">Python</span><span class="chip">Signal Processing</span><span class="chip">GMM</span><span class="chip">HMM</span><span class="chip">Audio Analytics</span><span class="chip">Speech</span></div>
+          <div class="proj-links">
+            <a class="proj-link magnetic" href="https://github.com/poketwouser/Speech-Recognition" target="_blank" rel="noopener" data-cursor><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5A10.5 10.5 0 0 0 8.7 22c.5.1.7-.2.7-.5v-2c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.2-1.5-1.2-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2 1-2.7-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.5.1 2.8.7.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.7 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.5 10.5 0 0 0 12 1.5z"/></svg> View repository</a>
+          </div>
+        </div>
+        <div class="proj-visual" data-viz="audio"><span class="v-label">Waveform → Text</span><span class="v-label r">GMM-HMM</span><canvas></canvas></div>
+      </article>
+
+      <!-- P8 NLP -->
+      <article class="proj reveal d1">
+        <div class="proj-body">
+          <span class="proj-no">PROJECT 08</span>
+          <span class="proj-kicker">NLP · Representation Learning</span>
+          <h3>Neural Language Modeling &amp; Word2Vec</h3>
+          <p class="proj-desc">From count-based statistics to dense semantics — trigram models, Neural Network Language Models (NNLM) and Word2Vec embeddings, compared to study how distributed representations capture meaning and context beyond n-gram counts.</p>
+          <div class="proj-metrics">
+            <div class="metric"><span class="mv"><span class="accent" data-count="3">3</span></span><span class="ml">LM paradigms compared</span></div>
+            <div class="metric"><span class="mv"><span class="accent">Word2Vec</span></span><span class="ml">Semantic embeddings</span></div>
+          </div>
+          <div class="proj-tags"><span class="chip">PyTorch</span><span class="chip">NumPy</span><span class="chip">NLTK</span><span class="chip">Word2Vec</span><span class="chip">NNLM</span></div>
+          <div class="proj-links">
+            <a class="proj-link magnetic" href="https://github.com/poketwouser/Trigram-NNLM-and-Word2Vec" target="_blank" rel="noopener" data-cursor><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5A10.5 10.5 0 0 0 8.7 22c.5.1.7-.2.7-.5v-2c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.2-1.5-1.2-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2 1-2.7-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.5.1 2.8.7.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.7 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.5 10.5 0 0 0 12 1.5z"/></svg> View repository</a>
+          </div>
+        </div>
+        <div class="proj-visual" data-viz="embed"><span class="v-label">Embedding Space</span><span class="v-label r">semantic clusters</span><canvas></canvas></div>
+      </article>
+
+      <!-- P9 Pneumonia -->
+      <article class="proj reveal d1">
+        <div class="proj-body">
+          <span class="proj-no">PROJECT 09</span>
+          <span class="proj-kicker">Medical Imaging · Deep Learning</span>
+          <h3>AI-Assisted Pneumonia Detection</h3>
+          <p class="proj-desc">Deep-learning pipelines detecting pneumonia from chest X-ray images — medical image preprocessing, augmentation and convolutional networks classifying radiographic scans to support diagnostic workflows.</p>
+          <div class="proj-metrics">
+            <div class="metric"><span class="mv"><span class="accent">CNN</span></span><span class="ml">Diagnosis pipeline</span></div>
+            <div class="metric"><span class="mv"><span class="accent">X-Ray</span></span><span class="ml">Chest radiographs</span></div>
+          </div>
+          <div class="proj-tags"><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">OpenCV</span><span class="chip">CNN</span><span class="chip">Medical Imaging</span></div>
+          <div class="proj-links">
+            <a class="proj-link magnetic" href="https://github.com/poketwouser/Pneumonia-Diagnosis-from-Chest-X-Ray-Images" target="_blank" rel="noopener" data-cursor><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5A10.5 10.5 0 0 0 8.7 22c.5.1.7-.2.7-.5v-2c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.2-1.5-1.2-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2 1-2.7-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.5.1 2.8.7.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.7 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.5 10.5 0 0 0 12 1.5z"/></svg> View repository</a>
+          </div>
+        </div>
+        <div class="proj-visual" data-viz="med"><span class="v-label">Chest X-Ray</span><span class="v-label r">scanning…</span><canvas></canvas></div>
+      </article>
+
+    </div>
+
+    <a class="gh-more reveal d1" href="https://github.com/poketwouser" target="_blank" rel="noopener" data-cursor>
+      <div class="gh-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5A10.5 10.5 0 0 0 8.7 22c.5.1.7-.2.7-.5v-2c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.2-1.5-1.2-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2 1-2.7-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.5.1 2.8.7.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.7 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.5 10.5 0 0 0 12 1.5z"/></svg></div>
+      <div class="gh-text">
+        <h3>More on GitHub</h3>
+        <p>These are the highlights — my GitHub holds many more experiments across ML, systems, finance and security. Every project ships with its source.</p>
+      </div>
+      <span class="gh-cta">github.com/poketwouser
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </span>
+    </a>
+  </div>
+</section>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{% if page.title %}{{ page.title }} · {% endif %}Kiran Kumar P — AI Engineer · Quant Researcher · Builder</title>
+<meta name="description" content="{{ page.description | default: site.description }}" />
+<meta name="author" content="Kiran Kumar P" />
+<meta property="og:title" content="{% if page.title %}{{ page.title }} · {% endif %}Kiran Kumar P — AI Engineer · Quant Researcher · Builder" />
+<meta property="og:description" content="{{ page.description | default: site.description }}" />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23050507'/%3E%3Ctext x='50' y='70' font-family='monospace' font-size='56' font-weight='700' fill='%2334e2ff' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" />
+</head>
+<body>
+
+<!-- ============ CINEMATIC LOADER ============ -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-mark">Initializing&nbsp;Universe</div>
+    <div class="loader-bar"><i></i></div>
+    <div class="loader-pct"><span class="lp-label">Assembling particles</span><span class="lp-num">0%</span></div>
+  </div>
+</div>
+
+<!-- ============ CURSOR ============ -->
+<div id="cursor-glow" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<!-- ============ TOAST ============ -->
+<div id="toast" aria-live="polite">
+  <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.5 5.5L20 8l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg></span>
+  <span class="toast-text">Achievement unlocked</span>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <a class="brand magnetic" href="{{ '/' | relative_url }}" aria-label="Kiran Kumar P — home" id="logo">
+    <span class="mark">KK</span>
+    <span class="brand-name">Kiran Kumar P </span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    {%- for item in site.data.nav -%}
+    {%- if item.external -%}
+    <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.name }}</a>
+    {%- else -%}
+    <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="active"{% endif %}>{{ item.name }}</a>
+    {%- endif -%}
+    {%- endfor -%}
+  </nav>
+  <div class="nav-actions">
+    <a class="btn btn-ghost magnetic" href="{{ '/contact/' | relative_url }}" data-cursor>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 5.5L20 7"/></svg>
+      <span class="btn-label">Get in touch</span>
+    </a>
+    <button class="menu-btn" data-menu aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-menu" aria-label="Mobile">
+  {%- for item in site.data.nav -%}
+  {%- if item.external -%}
+  <a href="{{ item.url }}" target="_blank" rel="noopener"><span class="mnum">0{{ forloop.index }}</span> {{ item.name }}</a>
+  {%- else -%}
+  <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="active"{% endif %}><span class="mnum">0{{ forloop.index }}</span> {{ item.name }}</a>
+  {%- endif -%}
+  {%- endfor -%}
+</nav>
+
+<main id="top" class="{{ page.main_class }}">
+
+{{ content }}
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <div class="f-name">Kiran Kumar P</div>
+      <div class="f-meta">AI &amp; Data Analytics · IIT Madras · © {{ 'now' | date: '%Y' }} ·</div>
+    </div>
+    <div class="f-soc">
+      <a href="https://github.com/poketwouser" target="_blank" rel="noopener" aria-label="GitHub" data-cursor><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5A10.5 10.5 0 0 0 8.7 22c.5.1.7-.2.7-.5v-2c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.2-1.5-1.2-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2 1-2.7-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.5.1 2.8.7.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.7 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.5 10.5 0 0 0 12 1.5z"/></svg></a>
+      <a href="https://www.linkedin.com/in/kirankumarp33/" target="_blank" rel="noopener" aria-label="LinkedIn" data-cursor><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4 0 4.8 2.6 4.8 6V21h-4v-5.3c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg></a>
+      <a href="https://codeforces.com/profile/kirankumarp405" target="_blank" rel="noopener" aria-label="Codeforces" data-cursor><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 7.5A1.5 1.5 0 0 1 6 9v9a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 2 18V9a1.5 1.5 0 0 1 1.5-1.5zM12 4.5A1.5 1.5 0 0 1 13.5 6v12a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9.5 18V6A1.5 1.5 0 0 1 11 4.5zM19.5 10.5A1.5 1.5 0 0 1 21 12v6a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 17 18v-6a1.5 1.5 0 0 1 1.5-1.5z"/></svg></a>
+      <a href="mailto:kirankumarp405@gmail.com" aria-label="Email" data-cursor><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 5.5L20 7"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ DEV TERMINAL (easter egg) ============ -->
+<div id="terminal" aria-hidden="true">
+  <div class="term-bar"><span class="dotmac r"></span><span class="dotmac y"></span><span class="dotmac g"></span><span class="t-title">kiran@iitm: ~/portfolio</span><span class="t-close" data-term-close>✕</span></div>
+  <div class="term-body" id="termBody"></div>
+  <div class="term-input"><span class="prompt">❯</span><input id="termInput" autocomplete="off" spellcheck="false" placeholder="type 'help'" /></div>
+</div>
+
+<script src="{{ '/particles.js' | relative_url }}"></script>
+<script src="{{ '/script.js' | relative_url }}"></script>
+</body>
+</html>

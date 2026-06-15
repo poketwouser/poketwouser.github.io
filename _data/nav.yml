@@ -1,0 +1,14 @@
+# Primary navigation — looped in _layouts/default.html for both the
+# desktop header and the mobile menu. `external: true` opens in a new tab
+# and is never marked active.
+- name: About
+  url: /about/
+- name: Work
+  url: /work/
+- name: Honors
+  url: /honors/
+- name: Blog
+  url: https://poketwouser.github.io/Blogs/
+  external: true
+- name: Contact
+  url: /contact/

@@ -1,0 +1,172 @@
+/* ============================================================
+   Kiran Kumar P — Writing · dark cinematic blog
+   Matches the poketwouser.github.io portfolio aesthetic.
+   ============================================================ */
+:root {
+  --bg: #050507;
+  --surface: #0c0d12;
+  --surface-2: #11131a;
+  --line: rgba(255, 255, 255, 0.09);
+  --line-2: rgba(255, 255, 255, 0.14);
+  --text: #f4f5f8;
+  --text-2: #b6bac6;
+  --text-3: #7e8493;
+  --cyan: #34e2ff;
+  --blue: #5b8cff;
+  --accent: var(--cyan);
+  --accent-soft: rgba(52, 226, 255, 0.1);
+  --accent-line: rgba(52, 226, 255, 0.32);
+  --glow: rgba(52, 226, 255, 0.5);
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Manrope", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+}
+.bg-glow {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(60% 50% at 80% -5%, rgba(52, 226, 255, 0.12), transparent 60%),
+    radial-gradient(50% 50% at 0% 100%, rgba(91, 140, 255, 0.1), transparent 60%);
+}
+.wrap { width: min(760px, 90vw); margin: 0 auto; position: relative; z-index: 1; }
+a { color: inherit; }
+
+/* ---- nav ---- */
+.site-nav {
+  position: sticky; top: 0; z-index: 20;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px clamp(20px, 5vw, 56px);
+  background: rgba(5, 5, 7, 0.7);
+  backdrop-filter: blur(16px) saturate(140%);
+  border-bottom: 1px solid var(--line);
+}
+.brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand .mark {
+  font-family: var(--font-mono); font-weight: 700; font-size: 14px;
+  color: var(--accent-ink, #021018);
+  background: var(--accent); border-radius: 8px; padding: 6px 9px; line-height: 1;
+  box-shadow: 0 0 18px var(--accent-soft);
+}
+.brand-name { font-family: var(--font-display); font-weight: 600; font-size: 15px; letter-spacing: 0.01em; }
+.brand-name span { color: var(--text-3); font-family: var(--font-mono); font-weight: 500; font-size: 12px; }
+.nav-links { display: flex; gap: 22px; }
+.nav-links a {
+  text-decoration: none; color: var(--text-2); font-size: 14px; font-weight: 500;
+  transition: color 0.25s;
+}
+.nav-links a:hover { color: var(--accent); }
+
+main.wrap { flex: 1; padding: clamp(48px, 8vw, 96px) 0 80px; }
+
+/* ---- gradient text ---- */
+.grad {
+  background: linear-gradient(100deg, var(--cyan), var(--blue));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+
+/* ---- eyebrow ---- */
+.post-eyebrow {
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 18px;
+}
+
+/* ---- home hero ---- */
+.hero { margin-bottom: 56px; }
+.hero-title {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: clamp(34px, 6vw, 56px); line-height: 1.04; letter-spacing: -0.02em;
+  margin-bottom: 18px;
+}
+.hero-lead { color: var(--text-2); font-size: 18px; max-width: 56ch; }
+
+/* ---- post list ---- */
+.post-list { display: flex; flex-direction: column; gap: 20px; }
+.post-card {
+  display: block; text-decoration: none;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 18px;
+  padding: clamp(24px, 4vw, 36px);
+  position: relative; overflow: hidden;
+  transition: transform 0.45s var(--ease), border-color 0.45s;
+}
+.post-card::before {
+  content: ""; position: absolute; top: 0; left: 0; width: 3px; height: 100%;
+  background: linear-gradient(var(--cyan), transparent); opacity: 0; transition: opacity 0.4s;
+}
+.post-card:hover { transform: translateY(-5px); border-color: var(--accent-line); }
+.post-card:hover::before { opacity: 1; }
+.pc-top { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.pc-tag {
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--accent); border: 1px solid var(--accent-line); background: var(--accent-soft);
+  padding: 5px 12px; border-radius: 999px;
+}
+.pc-date { font-family: var(--font-mono); font-size: 12px; color: var(--text-3); }
+.pc-title { font-family: var(--font-display); font-weight: 600; font-size: clamp(22px, 3.4vw, 30px); margin-bottom: 10px; }
+.pc-sub { color: var(--text-2); font-size: 15.5px; max-width: 60ch; }
+.pc-read {
+  display: inline-flex; margin-top: 22px; font-family: var(--font-mono); font-size: 13px;
+  color: var(--text-3); transition: color 0.25s, gap 0.25s;
+}
+.post-card:hover .pc-read { color: var(--accent); }
+
+/* ---- single post ---- */
+.back-link {
+  display: inline-block; font-family: var(--font-mono); font-size: 13px;
+  color: var(--text-3); text-decoration: none; margin-bottom: 30px; transition: color 0.25s;
+}
+.back-link:hover { color: var(--accent); }
+.back-link.foot { margin: 56px 0 0; }
+.post-title {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: clamp(32px, 6vw, 52px); line-height: 1.06; letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.post-subtitle { color: var(--text-2); font-size: 19px; max-width: 60ch; margin-bottom: 22px; }
+.post-meta {
+  display: flex; align-items: center; gap: 12px; font-family: var(--font-mono);
+  font-size: 13px; color: var(--text-3); padding-bottom: 28px;
+  border-bottom: 1px solid var(--line); margin-bottom: 40px;
+}
+.post-meta .dot { opacity: 0.5; }
+.post-body { font-size: 18px; line-height: 1.75; color: var(--text); }
+.post-body p { margin-bottom: 26px; color: var(--text-2); }
+.post-body strong { color: var(--text); font-weight: 600; }
+.post-body em { color: var(--accent); font-style: normal; }
+.post-body h2 { font-family: var(--font-display); font-size: 28px; margin: 44px 0 18px; }
+.post-body a { color: var(--accent); text-underline-offset: 3px; }
+.post-body blockquote {
+  border-left: 3px solid var(--accent); padding: 4px 0 4px 22px; margin: 0 0 26px;
+  color: var(--text-2); font-style: italic;
+}
+
+/* ---- footer ---- */
+.site-foot { border-top: 1px solid var(--line); padding: 36px 0; position: relative; z-index: 1; }
+.foot-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 24px; }
+.f-name { font-family: var(--font-display); font-weight: 600; }
+.f-meta { color: var(--text-3); font-size: 13px; font-family: var(--font-mono); }
+.f-soc { margin-left: auto; display: flex; gap: 18px; }
+.f-soc a { color: var(--text-2); text-decoration: none; font-size: 13px; transition: color 0.25s; }
+.f-soc a:hover { color: var(--accent); }
+
+@media (max-width: 560px) {
+  .nav-links { gap: 14px; }
+  .brand-name { display: none; }
+  .f-soc { margin-left: 0; }
+}

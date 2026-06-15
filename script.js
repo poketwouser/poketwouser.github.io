@@ -18,12 +18,18 @@
     var label = el.querySelector(".lp-label");
     var labels = ["Assembling particles", "Mapping the universe", "Calibrating systems", "Entering orbit"];
     var p = 0, li = 0;
+    function mark() { try { sessionStorage.setItem("kk_seen", "1"); } catch (e) {} }
     function done() {
       el.classList.add("done");
       root.classList.add("entered");
+      mark();
       startName();
       setTimeout(function () { el.style.display = "none"; }, 1000);
     }
+    // Multi-page site: play the full intro only once per session — later
+    // page navigations skip straight in.
+    var seen = false; try { seen = !!sessionStorage.getItem("kk_seen"); } catch (e) {}
+    if (seen) { el.classList.add("done"); root.classList.add("entered"); el.style.display = "none"; startName(); return; }
     if (reduce) { if (bar) bar.style.width = "100%"; if (num) num.textContent = "100%"; setTimeout(done, 200); return; }
     var iv = setInterval(function () {
       p += Math.random() * 16 + 5;

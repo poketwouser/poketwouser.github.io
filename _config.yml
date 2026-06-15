@@ -1,0 +1,15 @@
+title: "Kiran Kumar P — AI Engineer · Quant Researcher · Builder"
+description: "Kiran Kumar P — B.Tech in AI & Data Analytics at IIT Madras. AI engineer, quant researcher and builder. Applied ML research, quantitative finance, computer vision, agentic AI and security."
+author: "Kiran Kumar P"
+url: "https://poketwouser.github.io"
+baseurl: ""
+
+# Custom portfolio — bespoke layouts in _layouts, no Jekyll theme.
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+# Pretty permalinks; index pages drop to directory roots.
+permalink: pretty
