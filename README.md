@@ -11,13 +11,19 @@ Personal portfolio of **Kiran Kumar P** — a Jekyll multi-page site hosted on G
 | `/work/`    | `work.html`     | Research · Projects               |
 | `/honors/`  | `honors.html`   | Achievements · Live stats         |
 | `/contact/` | `contact.html`  | Contact                           |
-| `/Blogs/`   | external        | Blog (separate deployment)        |
+| `/Blogs/`   | `blog.html`     | Writing index (lists `_posts`)    |
+| `/Blogs/:title/` | `_posts/*.md` | Individual blog posts          |
 
 ## Structure
 
-- `_layouts/default.html` — shared shell: `<head>`, nav, footer, dev-terminal, scripts.
+- `_layouts/default.html` — portfolio shell: `<head>`, nav, footer, dev-terminal, particle scripts.
+- `_layouts/blog.html` + `_layouts/post.html` — the writing sub-site's own lighter chrome and post template.
 - `_data/nav.yml` — primary navigation; looped for both desktop + mobile menus and used to mark the active page.
-- `styles.css`, `script.js`, `particles.js` — shared assets, loaded on every page. The JS is null-safe, so each page only activates the widgets it contains.
+- `_posts/` — blog posts (Markdown). Permalinked to `/Blogs/:title/` via `_config.yml` defaults.
+- `styles.css` — portfolio theme; `assets/css/style.css` — blog theme. Each chrome loads only its own stylesheet.
+- `script.js`, `particles.js` — shared portfolio JS, loaded on every portfolio page. The JS is null-safe, so each page only activates the widgets it contains.
+
+The portfolio home surfaces the latest writing via `site.posts`, so the blog and the "Writing" teaser stay in sync automatically.
 
 ## Local preview
 

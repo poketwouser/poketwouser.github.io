@@ -1,7 +1,0 @@
-source "https://rubygems.org"
-
-# Use the GitHub Pages gem so local builds match GitHub's Pages environment.
-gem "github-pages", group: :jekyll_plugins
-
-# Lock to a compatible web server for `jekyll serve` on newer Rubies.
-gem "webrick", "~> 1.8"

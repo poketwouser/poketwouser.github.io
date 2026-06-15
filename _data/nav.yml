@@ -8,7 +8,6 @@
 - name: Honors
   url: /honors/
 - name: Blog
-  url: https://poketwouser.github.io/Blogs/
-  external: true
+  url: /Blogs/
 - name: Contact
   url: /contact/

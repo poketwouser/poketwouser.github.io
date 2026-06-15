@@ -85,3 +85,37 @@ main_class: ""
     </div>
   </div>
 </section>
+
+<!-- ============ WRITING (latest from the blog) ============ -->
+<section id="writing">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span class="num">05</span> / Writing</p>
+    <h2 class="section-title reveal d1">Notes &amp; <span class="grad">writing.</span></h2>
+    <p class="section-lead reveal d1" style="margin-bottom:48px;">Long-form thinking on cricket, AI, quant, and the things I build and help run.</p>
+    <div class="blog-grid">
+      {% assign latest = site.posts.first %}
+      {% if latest %}
+      <a class="blog-card featured glass-card reveal d1" href="{{ latest.url | relative_url }}" data-cursor>
+        <div class="bc-top"><span class="bc-tag">{{ latest.tags | first | default: 'Published' }}</span><span class="bc-date">{{ latest.date | date: '%b %Y' }}</span></div>
+        <h3>{{ latest.title }}</h3>
+        <p>{{ latest.subtitle | default: latest.excerpt | strip_html | truncate: 160 }}</p>
+        <span class="bc-soon">Read the post →</span>
+      </a>
+      {% endif %}
+      <article class="blog-card muted glass-card reveal d2">
+        <div class="bc-mark">···</div>
+        <h3 style="font-size:21px;">More writing</h3>
+        {% if site.posts.size > 1 %}
+        <ul class="bc-list">
+          {% for post in site.posts offset:1 limit:3 %}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <p>Essays on machine learning, quantitative finance, and security — in progress.</p>
+        {% endif %}
+        <a class="proj-link magnetic" href="{{ '/Blogs/' | relative_url }}" style="margin-top:20px;" data-cursor>All posts<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>

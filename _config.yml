@@ -4,6 +4,8 @@ author: "Kiran Kumar P"
 url: "https://poketwouser.github.io"
 baseurl: ""
 
+markdown: kramdown
+
 # Custom portfolio — bespoke layouts in _layouts, no Jekyll theme.
 exclude:
   - README.md
@@ -11,5 +13,12 @@ exclude:
   - Gemfile.lock
   - vendor
 
-# Pretty permalinks; index pages drop to directory roots.
-permalink: pretty
+# Blog posts live under /Blogs/ (the writing sub-site), keeping the
+# original published URLs. Portfolio pages set their own permalinks.
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /Blogs/:title/
