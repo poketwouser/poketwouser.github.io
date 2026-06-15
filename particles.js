@@ -448,13 +448,14 @@
     var canvas = document.getElementById("galaxy-canvas");
     if (!stage || !canvas) return;
     var cats = [
-      { n: "Machine Learning", r: 0.30, a: 0, sp: 0.18 },
-      { n: "Deep Learning", r: 0.40, a: 0.9, sp: -0.13 },
-      { n: "Quant Finance", r: 0.34, a: 1.9, sp: 0.16 },
-      { n: "Computer Vision", r: 0.44, a: 2.8, sp: -0.1 },
-      { n: "Agentic AI", r: 0.30, a: 3.8, sp: 0.2 },
-      { n: "Cybersecurity", r: 0.40, a: 4.7, sp: -0.15 },
-      { n: "Full-Stack Dev", r: 0.35, a: 5.6, sp: 0.14 }
+      { n: "Machine Learning", r: 0.30, a: 0.00, sp: 0.18 },
+      { n: "Deep Learning", r: 0.40, a: 0.79, sp: -0.13 },
+      { n: "Quant Finance", r: 0.34, a: 1.57, sp: 0.16 },
+      { n: "Computer Vision", r: 0.44, a: 2.36, sp: -0.1 },
+      { n: "Agentic AI", r: 0.30, a: 3.14, sp: 0.2 },
+      { n: "Cybersecurity", r: 0.40, a: 3.93, sp: -0.15 },
+      { n: "Full-Stack Dev", r: 0.35, a: 4.71, sp: 0.14 },
+      { n: "Cricket", r: 0.42, a: 5.50, sp: -0.12 }
     ];
     cats.forEach(function (c) {
       var el = document.createElement("div");

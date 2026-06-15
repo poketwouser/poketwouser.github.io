@@ -13,7 +13,7 @@ exclude:
   - Gemfile.lock
   - vendor
 
-# Blog posts live under /Blogs/ (the writing sub-site), keeping the
+# Blog posts live under /blog/ (the writing sub-site), keeping the
 # original published URLs. Portfolio pages set their own permalinks.
 defaults:
   - scope:
@@ -21,5 +21,5 @@ defaults:
       type: posts
     values:
       layout: post
-      permalink: /Blogs/:title/
+      permalink: /blog/:title/
       main_class: inner
