@@ -22,3 +22,4 @@ defaults:
     values:
       layout: post
       permalink: /Blogs/:title/
+      main_class: inner

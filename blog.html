@@ -1,24 +1,28 @@
 ---
-layout: blog
+layout: default
 title: Writing
 permalink: /Blogs/
+main_class: inner
+description: "Long-form notes on cricket, AI, quant, and the things I build and help run."
 ---
-<section class="hero">
-  <p class="post-eyebrow">Notes &amp; writing</p>
-  <h1 class="hero-title">Long-form thinking on <span class="grad">cricket, AI &amp; quant.</span></h1>
-  <p class="hero-lead">Long-form notes on cricket, AI, quant, and the things I build and help run.</p>
-</section>
 
-<section class="post-list">
-  {% for post in site.posts %}
-  <a class="post-card" href="{{ post.url | relative_url }}">
-    <div class="pc-top">
-      <span class="pc-tag">{% if post.tags %}{{ post.tags | first }}{% else %}Post{% endif %}</span>
-      <time class="pc-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b %Y" }}</time>
+<section id="writing">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span class="num">✦</span> / Writing</p>
+    <h2 class="section-title reveal d1">Notes &amp; <span class="grad">writing.</span></h2>
+    <p class="section-lead reveal d1" style="margin-bottom:48px;">Long-form thinking on cricket, AI, quant, and the things I build and help run.</p>
+    <div class="post-list reveal d1">
+      {% for post in site.posts %}
+      <a class="post-card glass-card" href="{{ post.url | relative_url }}" data-cursor>
+        <div class="pc-top">
+          <span class="pc-tag">{% if post.tags %}{{ post.tags | first }}{% else %}Post{% endif %}</span>
+          <time class="pc-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b %Y" }}</time>
+        </div>
+        <h2 class="pc-title">{{ post.title }}</h2>
+        {% if post.subtitle %}<p class="pc-sub">{{ post.subtitle }}</p>{% else %}<p class="pc-sub">{{ post.excerpt | strip_html | truncate: 160 }}</p>{% endif %}
+        <span class="pc-read">Read the post →</span>
+      </a>
+      {% endfor %}
     </div>
-    <h2 class="pc-title">{{ post.title }}</h2>
-    {% if post.subtitle %}<p class="pc-sub">{{ post.subtitle }}</p>{% else %}<p class="pc-sub">{{ post.excerpt | strip_html | truncate: 160 }}</p>{% endif %}
-    <span class="pc-read">Read the post →</span>
-  </a>
-  {% endfor %}
+  </div>
 </section>
