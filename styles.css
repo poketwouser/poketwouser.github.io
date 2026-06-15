@@ -62,7 +62,7 @@ html.cyber {
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: 84px; }
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
 }
@@ -662,4 +662,26 @@ a.blog-card:hover .bc-soon { color: var(--accent); gap: 13px; }
   .areas { grid-template-columns: 1fr; }
   .ach-grid { grid-template-columns: 1fr; }
   .blog-grid { grid-template-columns: 1fr; }
+  /* Compact the nav: icon-only "Get in touch" beside the hamburger */
+  .nav { gap: 12px; }
+  .nav-actions .btn-ghost .btn-label { display: none; }
+  .nav-actions .btn-ghost { padding: 12px; }
+  .brand-name span { display: none; }
+  /* Stack journey header hint below the title */
+  .journey-head { margin-bottom: 40px; }
+}
+
+@media (max-width: 480px) {
+  /* Tighter rhythm so phones aren't endless scroll */
+  section { padding-block: clamp(60px, 16vw, 96px); }
+  .hero { padding-top: 96px; }
+  .hero-cta { gap: 10px; }
+  .hero-cta .btn { flex: 1 1 100%; justify-content: center; }
+  .hero-socials a { width: 44px; height: 44px; }
+  .proj-body { padding: 26px 22px; }
+  .proj-metrics { gap: 18px 22px; }
+  .proj-links { flex-wrap: wrap; gap: 12px; }
+  .portrait-badge { gap: 14px; padding: 10px 14px; }
+  .stack-row { gap: 6px; }
+  .footer .wrap { flex-direction: column; align-items: flex-start; }
 }
